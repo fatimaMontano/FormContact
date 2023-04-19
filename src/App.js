@@ -25,16 +25,16 @@ function App() {
  };
 
    return ( 
-   <div> <h1>Contacto</h1> 
+   <div > <p>...in the meantime, you can reach using the following form:</p> 
      <form className='cf' ref={form} onSubmit={sendEmail}> 
        <div> 
-         <input type='nombre' placeholder='Nombre' name='user_nombre' /> 
-         <input type='correo' placeholder='Correo electrónico' name='user_correo' /> 
-         <input type='institucion' placeholder='Institución o empresa' name='user_institucion' /> 
+         <input type='nombre' placeholder='Name' name='user_nombre' /> 
+         <input type='correo' placeholder='Email' name='user_correo' /> 
+         <input type='institucion' placeholder='Organization' name='user_institucion' /> 
        </div> 
 
        <div> 
-         <textarea name='mensaje' type='text' placeholder='Mensaje'></textarea> 
+         <textarea name='mensaje' type='text' placeholder='Message'></textarea> 
        </div> 
        <div className='recaptcha'>
         <ReCAPTCHA
@@ -44,6 +44,10 @@ function App() {
        </div>
        <input type='submit' value='Enviar' id='input-submit' /> 
      </form> 
+
+      <div class="footer">
+        <p>2023 DMA Research and Data Analytics | Edificio Kinétika nivel B, calle El Carmen, Santa Tecla, La Libertad, El Salvador</p>
+      </div>
    </div> 
    ); 
  } 
