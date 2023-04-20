@@ -1,13 +1,23 @@
 @import url(https://fonts.googleapis.com/css?family=Merriweather); 
 
 html, body { 
-  background: #091351; 
-  font-family: 'Merriweather', sans-serif; 
-  padding: 1em; 
+  background-image: url("fondo4.jpg"); 
+  font-family: 'Outfit', sans-serif; 
+  padding: 10px; 
+  margin-top: 20px;
 } 
 
+.Logo{
+  float: left;
+  padding: 5px;
+  padding-left: 30px;
+  max-width: 200px;
+}
+
 h1 { 
-  text-align: left; 
+  padding-left: 100px;
+  padding-right: 100px;
+  text-align: center; 
   color: #ffffff; 
 } 
 
@@ -68,34 +78,51 @@ textarea {
   } 
 } 
 
-.cf:before, .cf:after { 
-  content: ' '; 
-  display: table; 
-} 
-
-.cf:after { 
-  clear: both; 
-}
-
 .aside {
-  padding-left: 50px;
+  padding: 50px;
   color: #ffffff;
   text-align: right;
 }
 
- .form .recaptcha {
-	margin-bottom: 20px;width: 304px;
-    margin: 0 auto;
+ .form {
+	margin-bottom: 20px;
+  width: 304px;
+  margin: 20px;
+}
+
+.recaptcha{
+  align-self: center;
+  margin-top: 20px;
 }
 
 .card{
   background-color: #b4b7ca;
   padding: 50px;
-  max-width: 500px; 
+  padding-top: 30px;
+  max-width: 400px; 
   text-align: center; 
   text-size-adjust: normal;
   margin: 20px auto; 
-  max-height: 300px;
+  max-height: 250px;
+}
+
+.card-body{
+  max-width: 300px;
+  text-align: center;
+  max-height: 100px;
+  padding: 0;
+}
+
+.card-img-top{
+  max-width: 350px;
+  text-align: center;
+  max-height: 200px;
+  padding-bottom: 15px;
+}
+
+.card-title{
+  font-weight: bolder;
+  font-size: large;
 }
 
 .footer {

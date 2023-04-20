@@ -48,7 +48,7 @@ function App() {
             ></ReCAPTCHA>
         </div>
 
-        <input type='submit' value='Enviar' id='input-submit' /> 
+        <input type='submit' value='Submit' id='input-submit' /> 
 
       </form> 
 
