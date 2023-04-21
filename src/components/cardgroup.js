@@ -12,37 +12,37 @@ const CARDS = () =>
 
             <div class="card">
                 <img src={imagen1} class="card-img-top" alt="Market Intelligence icon"/>
-                <div class="card-body">
+                
                 <h5 class="card-title">Market Intelligence</h5>
-                </div>
+              
             </div>
 
             <div class="card">
                 <img src={imagen2} class="card-img-top" alt="Economic Research icon"/>
-                <div class="card-body">
+                
                 <h5 class="card-title">Economic Research</h5>
-                </div>
+                
             </div>
 
             <div class="card">
                 <img src={imagen3} class="card-img-top" alt="Data Analytics and Machine Learning icon"/>
-                <div class="card-body">
+                
                 <h5 class="card-title">Data Analytics and Machine Learning</h5>
-                </div>
+
             </div>
 
             <div class="card">
                 <img src={imagen4} class="card-img-top" alt="Business Intelligence icon"/>
-                <div class="card-body">
+                
                 <h5 class="card-title">Business Intelligence</h5>
-                </div>
+                
             </div>
 
             <div class="card">
                 <img src={imagen5} class="card-img-top" alt="Monitoring and evaluation icon"/>
-                <div class="card-body">
+                
                 <h5 class="card-title">Monitoring and evaluation</h5>
-                </div>
+                
             </div>
             </div>
 

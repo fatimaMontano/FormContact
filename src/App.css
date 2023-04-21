@@ -1,7 +1,7 @@
 @import url(https://fonts.googleapis.com/css?family=Merriweather); 
 
 html, body { 
-  background-image: url("fondo4.jpg"); 
+  background-image: url("fondo2.jpg"); 
   font-family: 'Outfit', sans-serif; 
   padding: 10px; 
   margin-top: 20px;
@@ -70,14 +70,6 @@ textarea {
   margin-bottom: 1em; 
 } 
 
-@media (max-width: 480px) { 
-  .half { 
-    width: 100%; 
-    float: none; 
-    margin-bottom: 0; 
-  } 
-} 
-
 .aside {
   padding: 50px;
   color: #ffffff;
@@ -97,20 +89,13 @@ textarea {
 
 .card{
   background-color: #b4b7ca;
-  padding: 50px;
-  padding-top: 30px;
-  max-width: 400px; 
   text-align: center; 
   text-size-adjust: normal;
-  margin: 20px auto; 
-  max-height: 250px;
-}
-
-.card-body{
-  max-width: 300px;
-  text-align: center;
-  max-height: 100px;
-  padding: 0;
+  width: 300px;
+  height: auto; /* Cambiado de altura fija a altura automática */
+  flex: 1 1 20%;
+  overflow: hidden;
+  padding: 10px;
 }
 
 .card-img-top{
@@ -118,12 +103,98 @@ textarea {
   text-align: center;
   max-height: 200px;
   padding-bottom: 15px;
+  width: 70%;
+  align-self: center;
 }
 
 .card-title{
   font-weight: bolder;
   font-size: large;
+  background-color: #b4b7ca;
+  font-size: 18px;
 }
+
+.card-group{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+/* Estilos para pantallas más pequeñas */
+@media screen and (max-width: 768px) {
+  .card {
+    width: 25%;
+    height: auto;
+    flex: 1 1 100%;
+  }
+  .card-img-top {
+    max-width: 100%; /* Cambiado a ancho máximo del 100% para ajustarse automáticamente al ancho de la pantalla */
+  }
+  .card-body {
+    max-width: 100%; /* Cambiado a ancho máximo del 100% para ajustarse automáticamente al ancho de la pantalla */
+  }
+  .card-title {
+    font-size: 1em;
+  }
+}
+
+/*
+.card{
+  background-color: #b4b7ca;
+  padding: 50px;
+  padding-top: 30px;
+  text-align: center; 
+  text-size-adjust: normal;
+  width: 300px;
+  height: 300px;
+  flex: 1 1 20%;
+  margin: 10px;
+}
+
+.card-body{
+  max-width: 400px;
+  text-align: center;
+  max-height: 100px;
+  padding-top: 5px;
+  background-color: #b4b7ca;
+}
+
+.card-img-top{
+  max-width: 350px;
+  text-align: center;
+  max-height: 200px;
+  padding-bottom: 15px;
+  width: 100%;
+}
+
+.card-title{
+  font-weight: bolder;
+  font-size: large;
+  background-color: #b4b7ca;
+  font-size: 18px;
+}
+
+.card-group{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+/* Estilos para pantallas más pequeñas 
+@media screen and (max-width: 768px) {
+  .card {
+    width: 25%;
+    height: auto;
+    flex: 1 1 100%;
+  }
+}
+
+/* Estilos para pantallas más grandes 
+@media screen and (min-width: 1024px) {
+  .card, .card-body, .card-img-top, .card-title{
+    width: 100%;
+  }
+} 
+
+*/
 
 .footer {
   color: #ffffff;
