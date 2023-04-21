@@ -6,8 +6,9 @@ const INFO = () =>
 {
     return(
         <div>
-            
-            <img className="Logo" src={logoDMA} alt="ogo DMA"/>
+           <div className='divlogo'>            
+                <img className="Logo" src={logoDMA} alt="Logo DMA"/>
+           </div> 
 
             <div className='info' class="aside">
                 <div>

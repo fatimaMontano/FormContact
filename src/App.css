@@ -5,18 +5,17 @@ html, body {
   font-family: 'Outfit', sans-serif; 
   padding: 10px; 
   margin-top: 20px;
+  background-size: cover;
 } 
 
 .Logo{
-  float: left;
   padding: 5px;
   padding-left: 30px;
   max-width: 200px;
 }
 
 h1 { 
-  padding-left: 100px;
-  padding-right: 100px;
+  padding-bottom: 30px;
   text-align: center; 
   color: #ffffff; 
 } 
@@ -26,6 +25,9 @@ p {
   color: #ffffff; 
 } 
 
+.divlogo{
+  width: auto;
+}
 
 form { 
   max-width: 600px; 
@@ -71,9 +73,11 @@ textarea {
 } 
 
 .aside {
-  padding: 50px;
+  padding: 30px;
+  padding-left: 50px;
+  padding-right: 50px;
   color: #ffffff;
-  text-align: right;
+  text-align: center;
 }
 
  .form {
@@ -136,65 +140,6 @@ textarea {
     font-size: 1em;
   }
 }
-
-/*
-.card{
-  background-color: #b4b7ca;
-  padding: 50px;
-  padding-top: 30px;
-  text-align: center; 
-  text-size-adjust: normal;
-  width: 300px;
-  height: 300px;
-  flex: 1 1 20%;
-  margin: 10px;
-}
-
-.card-body{
-  max-width: 400px;
-  text-align: center;
-  max-height: 100px;
-  padding-top: 5px;
-  background-color: #b4b7ca;
-}
-
-.card-img-top{
-  max-width: 350px;
-  text-align: center;
-  max-height: 200px;
-  padding-bottom: 15px;
-  width: 100%;
-}
-
-.card-title{
-  font-weight: bolder;
-  font-size: large;
-  background-color: #b4b7ca;
-  font-size: 18px;
-}
-
-.card-group{
-  display: flex;
-  flex-wrap: wrap;
-}
-
-/* Estilos para pantallas más pequeñas 
-@media screen and (max-width: 768px) {
-  .card {
-    width: 25%;
-    height: auto;
-    flex: 1 1 100%;
-  }
-}
-
-/* Estilos para pantallas más grandes 
-@media screen and (min-width: 1024px) {
-  .card, .card-body, .card-img-top, .card-title{
-    width: 100%;
-  }
-} 
-
-*/
 
 .footer {
   color: #ffffff;
