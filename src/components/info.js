@@ -5,7 +5,7 @@ import CARDS from './cardgroup';
 const INFO = () =>
 {
     return(
-        <div>
+        <div id="divinfo">
            <div className='divlogo'>            
                 <img className="Logo" src={logoDMA} alt="Logo DMA"/>
            </div> 
@@ -18,7 +18,6 @@ const INFO = () =>
 
                 <CARDS></CARDS> 
             </div>
-
         </div>
     );
 }

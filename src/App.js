@@ -48,9 +48,9 @@ function App() {
   };
 
   return (
-    <div>
+    <div id="web">
       <INFO></INFO>
-      <div>
+      <div id="form">
         <p>...in the meantime, you can reach using the following form:</p>
         <form className='cf' ref={form} onSubmit={sendEmail}>
           <div>
@@ -75,7 +75,7 @@ function App() {
         </form>
 
         <div class="footer">
-          <p>2023 DMA Research and Data Analytics | Edificio Kinétika nivel B, calle El Carmen, Santa Tecla, La Libertad, El Salvador</p>
+          <p id="footer">2023 DMA Research and Data Analytics | Edificio Kinétika nivel B, calle El Carmen, Santa Tecla, La Libertad, El Salvador</p>
         </div>
 
       </div>

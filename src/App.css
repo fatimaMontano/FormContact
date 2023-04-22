@@ -23,6 +23,7 @@ h1 {
 p { 
   text-align: center; 
   color: #ffffff; 
+  font-size:x-large;
 } 
 
 .divlogo{
@@ -48,8 +49,8 @@ input, textarea {
   display: block;
   width: 100%; 
   margin-top: 1em; 
-  font-family: 'Merriweather', sans-serif; 
   resize: none; 
+  font-size: large;
 } 
 
 #input-submit { 
@@ -70,7 +71,7 @@ textarea {
   float: left; 
   width: 48%; 
   margin-bottom: 1em; 
-} 
+}
 
 .aside {
   padding: 30px;
@@ -106,14 +107,14 @@ textarea {
   max-width: 350px;
   text-align: center;
   max-height: 200px;
-  padding-bottom: 15px;
+  padding: 15px;
   width: 70%;
   align-self: center;
 }
 
 .card-title{
   font-weight: bolder;
-  font-size: large;
+  font-size:x-large;
   background-color: #b4b7ca;
   font-size: 18px;
 }
@@ -128,22 +129,44 @@ textarea {
   .card {
     width: 25%;
     height: auto;
-    flex: 1 1 100%;
+    flex: 1 1 50%;
   }
   .card-img-top {
-    max-width: 100%; /* Cambiado a ancho máximo del 100% para ajustarse automáticamente al ancho de la pantalla */
+    max-width: 75%; /* Cambiado a ancho máximo del 100% para ajustarse automáticamente al ancho de la pantalla */
   }
   .card-body {
-    max-width: 100%; /* Cambiado a ancho máximo del 100% para ajustarse automáticamente al ancho de la pantalla */
+    max-width: 50%; /* Cambiado a ancho máximo del 100% para ajustarse automáticamente al ancho de la pantalla */
   }
   .card-title {
-    font-size: 1em;
+    font-size:small;
   }
+
+  .cf{
+    width: 90%;  
+  }
+
 }
 
-.footer {
+.footer, #footer {
   color: #ffffff;
   text-align: center;
-  font-size: 12px;
+  font-size: medium;
   padding: 15px;
+}
+
+#root{
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+
+#divinfo{
+  max-width: 1000px;
+  align-self: center;
+  margin:auto;
+}
+
+#web{
+  align-self: center;  
+  max-width: 1000px;
 }
