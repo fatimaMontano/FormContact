@@ -90,6 +90,11 @@ textarea {
 .recaptcha{
   align-self: center;
   margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.required-error {
+  border-color: red !important;
 }
 
 .card{

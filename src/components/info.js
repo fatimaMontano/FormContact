@@ -13,7 +13,7 @@ const INFO = () =>
             <div className='info' class="aside">
                 <div>
                     <p>We are refurbishing our site...</p>
-                    <h1>We support knowledge generation accross sectors and organizations</h1>
+                    <h1><strong>We support knowledge generation accross sectors and organizations</strong></h1>
                 </div>
 
                 <CARDS></CARDS> 
