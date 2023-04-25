@@ -12,7 +12,7 @@ function App() {
   const form = useRef();
   const recaptchaRef = useRef(); // crea una referencia para ReCAPTCHA
 
-  const [open, setOpen] = React.useState(true);
+  const [open, setOpen] = React.useState(false);
 
   //Cuando cambian los parámetros del recaptcha
   const onChange=() => {
@@ -43,7 +43,7 @@ function App() {
 
   //Error que envían los inputs
   const showError = (input) => {
-    
+    setOpen(true);
   };
 
   //Enviar email
@@ -53,6 +53,7 @@ const sendEmail = (e) => {
 
   if (!validateInputs() || !requiredFields.every(field => form.current[field].value)) {
     setOpen(true);
+    console.log(open)
     return;
   }
 
@@ -67,10 +68,12 @@ const sendEmail = (e) => {
         (result) => {
           console.log(result.text);
           form.current.reset();
-          ReCAPTCHA.current.reset();
+          recaptchaRef.current.reset();
+          setOpen(false);
         },
         (error) => {
           console.log(error.text);
+          setOpen(true);
         }
       );
   };
@@ -82,9 +85,9 @@ const sendEmail = (e) => {
         <p>...in the meantime, you can reach using the following form:</p>
         <form className='cf' ref={form} onSubmit={sendEmail}>
           <div>
-            <input type='nombre' placeholder='Name' name='user_nombre' id='user_nombre' required/>
-            <input type='correo' placeholder='Email' name='user_correo' id='user_correo' required />
-            <input type='institucion' placeholder='Organization' name='user_institucion' id='user_institucion' required/>
+            <input type='nombre' placeholder='Name' name='user_nombre' id='user_nombre' />
+            <input type='correo' placeholder='Email' name='user_correo' id='user_correo'  />
+            <input type='institucion' placeholder='Organization' name='user_institucion' id='user_institucion' />
           </div>
 
           <div>

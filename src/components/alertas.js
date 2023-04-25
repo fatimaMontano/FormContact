@@ -18,6 +18,7 @@ export default function TransitionAlerts({ open, setOpen }) {
               size="small"
               onClick={() => {
                 setOpen(false);
+                console.log('se logró')
               }}
             >
               <CloseIcon fontSize="inherit" />
